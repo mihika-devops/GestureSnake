@@ -53,7 +53,6 @@ Each module has a single responsibility, making the project easy to extend and m
 ---
 
 ## 🚀 Installation & Run
-
 Clone the repository:
 ```bash
 git clone https://github.com/mihika-devops/GestureSnake.git
@@ -68,7 +67,10 @@ pip install -r requirements.txt
 Run the game:
 
 python src/snake.py
-🎯 Controls
+
+
+## 🎯 Controls
+
 Move hand up → Snake moves up
 
 Move hand down → Snake moves down
@@ -79,12 +81,16 @@ Move hand right → Snake moves right
 
 Closed fist → Pause (if enabled)
 
+
 ⚠️ Notes
+
 Requires a working webcam
 
 Designed for local execution (camera-based projects cannot run on GitHub Pages)
 
+
 📌 Project Status
+
 Actively improving:
 
 Demo GIF
@@ -93,16 +99,9 @@ Visual polish
 
 Gesture accuracy tuning
 
+
 👤 Author
+
 Mihika Bhosale
 Computer Vision & Python Projects
 
-
----
-
-## 📤 Final step: commit it
-Run:
-```bash
-git add README.md
-git commit -m "Improve README documentation"
-git push
