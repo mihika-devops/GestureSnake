@@ -34,8 +34,11 @@ Control the snake in real time using hand movements captured from your webcam �
 
 src/
 ├── snake.py # Main game loop and core logic
+
 ├── hand_tracker.py # Hand detection using MediaPipe
+
 ├── gesture_buffer.py # Gesture smoothing & stabilization
+
 ├── renderer.py # Rendering, animations, UI
 
 
