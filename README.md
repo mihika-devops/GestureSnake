@@ -1,95 +1,108 @@
-# Gesture Snake (Pro)
+# GestureSnake 🐍✋
 
-![Python](https://img.shields.io/badge/python-3.11-blue)
-![OpenCV](https://img.shields.io/badge/opencv-4.x-brightgreen)
-![MediaPipe](https://img.shields.io/badge/mediapipe-0.10-orange)
-
-A **gesture-controlled Snake game** built with **Python**, **OpenCV**, and **MediaPipe**.  
-Move the snake using your hand and enjoy a fully interactive experience without a keyboard!
+A gesture-controlled Snake game built using **Python, OpenCV, MediaPipe, and Pygame**.  
+Control the snake in real time using hand movements captured from your webcam — no keyboard required.
 
 ---
 
-## 🎮 Features
-
-- **Gesture Controls:** Move the snake using hand gestures (UP, DOWN, LEFT, RIGHT). Pause with a closed fist.
-- **Smooth Snake Logic:** Snake movement handled by a dedicated `Snake` class; responsive and jitter-free.
-- **Fruit Pop Animation:** Fruits grow/shrink when eaten; score increments properly.
-- **High Score Tracking:** Scores saved in `highscore.txt` and auto-updated.
-- **Modular Architecture:** Clean separation of game logic, rendering, hand detection, and gesture smoothing.
+## 🎮 Demo
+> Demo GIF coming soon  
+*(Will be added after gameplay recording)*
 
 ---
 
+## ✨ Features
 
-## ⚡ Installation
+- **Gesture-Based Controls**  
+  Control snake movement using hand gestures (UP, DOWN, LEFT, RIGHT).
 
-1. Clone the repository:
+- **Smooth Snake Logic**  
+  Clean and responsive movement with jitter-free gesture handling.
 
+- **Fruit & Score System**  
+  Fruits spawn randomly, score increases correctly, and growth is animated.
+
+- **High Score Tracking**  
+  High scores are stored locally and auto-updated.
+
+- **Modular Architecture**  
+  Clear separation of game logic, rendering, hand tracking, and gesture smoothing.
+
+---
+
+## 🧩 Architecture Overview
+
+src/
+├── snake.py # Main game loop and core logic
+├── hand_tracker.py # Hand detection using MediaPipe
+├── gesture_buffer.py # Gesture smoothing & stabilization
+├── renderer.py # Rendering, animations, UI
+
+
+Each module has a single responsibility, making the project easy to extend and maintain.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python 3.11**
+- **Pygame** – game loop & rendering
+- **OpenCV** – camera input
+- **MediaPipe** – real-time hand tracking
+
+---
+
+## 🚀 Installation & Run
+
+Clone the repository:
 ```bash
-git clone https://github.com/<username>/<repo>.git
+git clone https://github.com/mihika-devops/GestureSnake.git
 cd GestureSnake
-Create and activate a virtual environment:
+Create and activate a virtual environment (recommended):
 
 python -m venv venv
-source venv/bin/activate   # macOS/Linux
-# or
-venv\Scripts\activate      # Windows
+source venv/bin/activate   # macOS / Linux
 Install dependencies:
 
-pip install mediapipe opencv-python numpy
-▶️ Running the Game
-python src/snake_game.py
-Controls:
+pip install -r requirements.txt
+Run the game:
 
-Hand Gestures: Move the snake.
+python src/snake.py
+🎯 Controls
+Move hand up → Snake moves up
 
-Fist: Pause the game.
+Move hand down → Snake moves down
 
-SPACE: Start/restart the game.
+Move hand left → Snake moves left
 
-ESC: Quit the game.
+Move hand right → Snake moves right
 
-🗂 Folder Structure
-GestureSnake/
-│
-├─ src/
-│   ├─ snake_game.py
-│   ├─ vision/
-│   │   └─ hand_tracker.py
-│   ├─ game/
-│   │   └─ snake.py
-│   ├─ utils/
-│   │   └─ gesture_buffer.py
-│   ├─ ui/
-│   │   └─ renderer.py
-│   └─ assets/
-│       └─ apple.png
-├─ screenshots/
-│   └─ start.png, gameplay.png, gameover.png
-├─ venv/
-└─ README.md
+Closed fist → Pause (if enabled)
 
+⚠️ Notes
+Requires a working webcam
 
+Designed for local execution (camera-based projects cannot run on GitHub Pages)
 
-💡 Notes
-Make sure your webcam is free and accessible.
+📌 Project Status
+Actively improving:
 
-Gestures are based on index finger position — keep hand in front of camera.
+Demo GIF
 
-Designed for single-hand use.
+Visual polish
+
+Gesture accuracy tuning
+
+👤 Author
+Mihika Bhosale
+Computer Vision & Python Projects
 
 
-## 📜 License
+---
 
-MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
-
+## 📤 Final step: commit it
+Run:
+```bash
+git add README.md
+git commit -m "Improve README documentation"
+git push
