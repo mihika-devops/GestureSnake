@@ -1,0 +1,18 @@
+{
+    "cSpell.words": [
+        "AVFOUNDATION",
+        "blit",
+        "fourcc",
+        "gameover",
+        "HIGHSCORE",
+        "imread",
+        "imshow",
+        "lerp",
+        "linalg",
+        "mediapipe",
+        "opencv",
+        "pygame",
+        "surfarray",
+        "venv"
+    ]
+}
